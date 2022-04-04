@@ -34,7 +34,7 @@ func Load() Config {
 	config.PostgresPassword = cast.ToString(getOrReturnDefault("DATABASE_PASSWORD", "postgres"))
 	config.PostgresSSL = cast.ToString(getOrReturnDefault("DATABASE_SSL", "disable"))
 
-	config.RPCPort = cast.ToString(getOrReturnDefault("RPC_PORT", ":50051"))
+	config.RPCPort = cast.ToString(getOrReturnDefault("RPC_PORT", ":9090"))
 
 	config.KafkaHost = cast.ToString(getOrReturnDefault("KAFKA_HOST", "localhost"))
 	config.KafkaPort = cast.ToInt(getOrReturnDefault("KAFKA_PORT", 9092))
